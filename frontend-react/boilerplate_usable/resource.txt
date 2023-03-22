@@ -1,0 +1,4 @@
+https://youtu.be/rEwsKL4Elng
+
+useNavigate() and useLocation()
+https://programmingfields.com/redirect-to-component-with-props-using-usenavigate-hook/

@@ -1,0 +1,61 @@
+<div className="inline w-50">
+        <h4 className="text-center">Your Posts</h4>
+        <table className="table table-dark table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th><th scope="col">Title</th><th scope="col">Description</th><th scope="col">Bids</th>
+                </tr>
+            </thead>
+            <tbody className="table-light">
+                {
+                    consumer.posts.map((post)=>{
+                        return <tr key={post.postId}><td>{post.title}</td><td>{post.description}</td></tr>
+                    })
+                }
+                <tr>
+                    <td><Link to={"/post"} className="btn btn-success">New Post</Link></td><td>{ }</td><td>{ }</td><td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div className="inline w-50">
+        <h4 className="text-center">Your Addresses</h4>
+        <table className="table table-dark table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col">Details</th><th scope="col">City</th><th scope="col">Pincode</th><th scope="col">Bids</th>
+                </tr>
+            </thead>
+            <tbody className="table-light">
+                {
+                    consumer.addresses.map((address)=>{
+                        return <tr key={address.details}><td>{address.details}</td><td>{address.city}</td><td>{address.pincode}</td></tr>
+                    })
+                }
+                <tr>
+                    <td><button className="btn btn-success">Add New Address</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div className="inline w-50">
+        <h4 className="text-center">Your Profile Details</h4>
+        <table className="table table-dark">
+            <thead>
+                <tr>
+                    <th>Name</th><th>Email</th><th>Phone</th>
+                </tr>
+            </thead>
+            <tbody className="table-light">
+                <tr>
+                    <td>{ }</td><td>{ }</td><td>{ }</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        {/* other components will come here */}
+    </div>
+    <div>
+
+    </div>
